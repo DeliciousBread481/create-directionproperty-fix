@@ -1,0 +1,33 @@
+modLoader = "javafml"  
+loaderVersion = "[47,)"  
+license = "MIT"  
+  
+[[mods]]  
+modId = "createdpfix"  
+version = "${file.jarVersion}"  
+displayName = "Create DirectionProperty Fix"  
+description = "Fixes EncasedFanBlockEntity crash when BlockState has no FACING property."  
+  
+[[dependencies.createdpfix]]  
+modId = "forge"  
+mandatory = true  
+versionRange = "[47,)"  
+ordering = "NONE"  
+side = "BOTH"  
+  
+[[dependencies.createdpfix]]  
+modId = "minecraft"  
+mandatory = true  
+versionRange = "[1.20.1,1.21)"  
+ordering = "NONE"  
+side = "BOTH"  
+  
+[[dependencies.createdpfix]]  
+modId = "create"  
+mandatory = true  
+versionRange = "*"  
+ordering = "AFTER"  
+side = "BOTH"  
+  
+[[mixins]]  
+config = "createdpfix.mixins.json"
